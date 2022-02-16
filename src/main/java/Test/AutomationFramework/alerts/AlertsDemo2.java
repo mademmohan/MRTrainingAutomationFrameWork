@@ -17,12 +17,13 @@ public class AlertsDemo2 {
 		driver.manage().window().maximize();
 
 		driver.get("https://www.hyrtutorials.com/p/alertsdemo.html");
+		Thread.sleep(2000);
 		
 		driver.findElement(By.id("promptBox")).click();
 		
 		Alert alert=driver.switchTo().alert();
 		
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 		
 		alert.sendKeys("MR Training");
 		
@@ -30,7 +31,7 @@ public class AlertsDemo2 {
 		
 		Thread.sleep(2000);
 		
-		driver.close();
+		//driver.close();
 	}
 
 }
